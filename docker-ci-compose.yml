@@ -1,0 +1,16 @@
+version: "3"
+services:
+  test:
+    image: wandersuite/wander
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_DB=NotAValidDB
+      - POSTGRES_USER=NotAValidUser
+      - POSTGRES_PASSWORD=NotAValidPassword
+    ports:
+      - "5432:5432"
+    container_name: wander-db
+    volumes:
+      - ./postgres/:/docker-entrypoint-initdb.d/
