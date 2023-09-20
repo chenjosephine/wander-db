@@ -55,4 +55,4 @@ docker logs wander-db
 ### PIPELINES
 
 - Any pull request will trigger testing of the db in the pipeline
-- When pull requests are closed, the db is published to docker
+- When pull requests are closed, the db is published to dockerhub
