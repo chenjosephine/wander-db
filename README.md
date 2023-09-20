@@ -1,5 +1,7 @@
 # wander-db
 
+This repo houses changes to the wander db.
+
 ## LOCAL ENVIRONMENT
 
 On startup,
