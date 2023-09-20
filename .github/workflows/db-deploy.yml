@@ -14,8 +14,6 @@ on:
         required: true
       DOCKER_TOKEN:
         required: true
-      TAG_VERSION:
-        required: true
   pull_request:
     types:
       - closed
